@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Cubical>
+
+<br />
+<div class="backgroundWhite">
+    <h2 class="text-info"> Cubical List</h2>
+    <br />
+    <div>
+        @if (Model.Count() > 0)
+        {
+            <table class="table table-striped border">
+                <tr class="table-secondary">
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Floor Number
+                    </th>
+                    <th>
+                        Cubical Name
+                    </th>
+
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Id
+                        </td>
+                        <td>
+                            @item.FloorNumber
+                        </td>
+                        <td>
+                            @item.CubicalName
+                        </td>
+
+                    </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <p>No category exists...</p>
+        }
+    </div>
+</div>
