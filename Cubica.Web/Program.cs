@@ -19,6 +19,8 @@ namespace Cubica.Web
                (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddScoped<ICubicalService, CubicalService>();
             builder.Services.AddScoped<ICubicalRepository, CubicalRepository>();
+            builder.Services.AddScoped<ICubicalBookingService, CubicalBookingService>();
+            builder.Services.AddScoped<ICubicalBookingRepository, CubicalBookingRepository>();
 
             var app = builder.Build();
 
