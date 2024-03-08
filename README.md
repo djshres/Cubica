@@ -1,0 +1,1 @@
+This application streamlines the process of reserving office cubicles in advance. Users can conveniently input their information, including email, and reserve a cubicle for a specific day. Developed using ASP.NET Core 8, this platform offers a user-friendly interface for efficient booking management within office environments.
