@@ -2,8 +2,6 @@
 using Cubica.Data.Repository.IRepository;
 using Cubica.Models.Model;
 using Cubica.Models.ViewModel;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Cubica.Core.Services
 {
